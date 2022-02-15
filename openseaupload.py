@@ -110,7 +110,7 @@ def main_program_loop():
     opt.add_experimental_option("debuggerAddress", "localhost:8989")
     driver = webdriver.Chrome(
         executable_path=project_path + "/chromedriver.exe",
-        chrome_options=opt,
+        options=opt,
     )
     wait = WebDriverWait(driver, 60)
 
